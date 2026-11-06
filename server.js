@@ -48,7 +48,7 @@ io.on('connection', (socket) => {
 });
 
 // ===== MIDDLEWARE =====
-app.use(cors({ origin: 'https://dantech1.vercel.app/', credentials: true }));
+app.use(cors({ origin: 'https://dantech1.vercel.app', credentials: true }));
 app.use(express.json());
 
 // ===== DB =====
@@ -65,5 +65,5 @@ app.use('/api/posts', postRouter);
 
 // ===== START =====
 server.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on https://dantech1.vercel.app:${PORT}`);
 });
