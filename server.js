@@ -20,7 +20,7 @@ const server = http.createServer(app);
 
 // ===== SOCKET.IO =====
 const io = new Server(server, {
-  cors: { origin: 'http://localhost:5173', credentials: true },
+  cors: { origin: 'https://dantech1.vercel.app', credentials: true },
 });
 
 app.set('io', io);   // accessible in routes via req.app.get('io')
