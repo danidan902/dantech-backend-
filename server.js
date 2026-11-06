@@ -48,7 +48,7 @@ io.on('connection', (socket) => {
 });
 
 // ===== MIDDLEWARE =====
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: 'https://dantech1.vercel.app/', credentials: true }));
 app.use(express.json());
 
 // ===== DB =====
